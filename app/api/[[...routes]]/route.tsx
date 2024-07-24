@@ -7,6 +7,7 @@ import { handle } from 'frog/next'
 import { serveStatic } from 'frog/serve-static'
 
 const app = new Frog({
+  title: "doiq",
   assetsPath: '/',
   basePath: '/api',
   // Supply a Hub to enable frame verification.
