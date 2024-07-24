@@ -6,8 +6,8 @@ import styles from './page.module.css'
 
 export async function generateMetadata(): Promise<Metadata> {
   const frameTags = await getFrameMetadata(
-    // `${process.env.VERCEL_URL || 'http://localhost:3000'}/api`,
-    'http://doiq_frame2.vercel.app',
+    `${process.env.VERCEL_URL || 'http://localhost:3000'}/api`,
+    // 'http://doiq_frame2.vercel.app',
   )
   return {
     other: frameTags,
